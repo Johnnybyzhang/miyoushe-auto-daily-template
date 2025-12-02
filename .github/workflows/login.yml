@@ -1,4 +1,4 @@
-name: Daily check in
+name: Miyoushe Daily Check-in
 
 on:
   schedule:
