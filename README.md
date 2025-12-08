@@ -1,5 +1,7 @@
 # Miyoushe Auto Daily Check In (CN Server)
 
+[如何使用（中文）](Usage_Guide-cn.md)
+
 Automated daily check-in for Miyoushe (CN Server) games using GitHub Actions.
 
 **Supported Games:**
