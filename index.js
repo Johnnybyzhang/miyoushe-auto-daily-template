@@ -219,17 +219,17 @@ async function run(cookie, games) {
 
     // 3. Sign in for each role
     for (const role of roles) {
-      log('info', `Signing in for ${role.nickname} (${role.game_uid})...`);
+      log('info', `Signing in...`);
 
       const res = await signGame(gameName, actId, role.region, role.game_uid, headers);
 
       if (res) {
         if (res.retcode === 0) {
-          log('info', `Success! Checked in for ${role.nickname}`);
+          log('info', `Success! Checked in`);
         } else if (res.retcode === -5003) {
-          log('info', `Already checked in for ${role.nickname}`);
+          log('info', `Already checked in`);
         } else {
-          log('error', `Failed to check in for ${role.nickname}: ${res.message} (${res.retcode})`);
+          log('error', `Failed to check in: ${res.message} (${res.retcode})`);
           if (res.data && res.data.is_risk) {
             log('error', `Account is at risk (Geetest required).`);
           }
