@@ -27,13 +27,13 @@ For the CN server, you need `cookie_token` and `account_id` (or `ltoken` and `lt
 **Recommended Method (iOS Shortcut):**
 1. Download and run this shortcut: [Get Miyoushe Token](https://www.icloud.com/shortcuts/881fd76f17ef431893660d3324ea19c2)
 2. Follow the instructions to get your cookie string.
-3. The cookie string should look like: `cookie_token=...; account_id=...; ...`
+3. The cookie string should look like: `account_mid_v2=REDACTED; account_id_v2=REDACTED; ltmid_v2=REDACTED; ltuid_v2=REDACTED; account_id=REDACTED; ltuid=REDACTED; _MHYUUID=REDACTED; DEVICEFP=REDACTED; MIHOYO_LOGIN_PLATFORM_LIFECYCLE_ID=REDACTED; cookie_token=REDACTED; ltoken=REDACTED` (The cookie_token and ltoken are most important, but it's recommended that you copy everything, the script will try all possible auth methords to ensure better compatibility
 
 **Alternative Method (Browser):**
-1. Log in to [Miyoushe](https://www.miyoushe.com/).
-2. Open Developer Tools (F12) -> Application -> Cookies.
-3. Find `cookie_token` and `account_id` (or `ltoken` and `ltuid`).
-4. Construct the string: `cookie_token=YOUR_TOKEN; account_id=YOUR_ID`
+1. Log in to [Miyoushe](https://www.miyoushe.com/ys/).
+2. Open Developer Tools (F12) -> Console.
+3. Enter the following: `document.cookie`
+4. Right click and select "Copy as String"
 
 ## Usage
 
